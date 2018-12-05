@@ -26,6 +26,13 @@ See the [environment variables reference document](REFERENCE-environment_variabl
 
 5. Set the `EMAIL_FROM` environment variable. This is the email address users will see when they receive emails.
 
+6. To be able to use the `Export Data` feature, be sure you have an AWS S3 bucket setup, as well as an AWS IAM programmatic user API key and secret key. Please make sure you have proper values in the following environment variables:
+
+  - `AWS_ACCESS_KEY_ID`
+  - `AWS_SECRET_ACCESS_KEY`
+  - `AWS_S3_BUCKET_NAME`
+
+These are necessary to prepare and serve the export/reports data.
 
 ## External SMTP server setup
 __Skip this section__ if you are using Mailgun.
